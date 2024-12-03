@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Briefly",
+  "version": "1.0",
+  "description": "Summarize and highlight website content directly from Google Search.",
+  "permissions": ["activeTab","scripting"],
+  "host_permissions": ["*://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/search*",
+         "*://web.telegram.org/*",
+        "*://web.whatsapp.com/*"
+    ],
+      "js": ["content.js", "reply-suggestion-module.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "BrieflyIcon16.png",
+      "48": "BrieflyIcon48.png",
+      "128": "BrieflyIcon128.png"
+    }
+  }
+}
