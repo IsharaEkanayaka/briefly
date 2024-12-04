@@ -2,8 +2,10 @@
 
 ## What is Briefly?
 Briefly is your assistant which simplifies your evey day work. It can summarize the content in any web link and shows the results when hovered.
+<br>
 ![alt text](image.png)
 Suggest Replies for Whatsapp/Telegram messages
+<br>
 ![alt text](image-1.png)
 
 ## How to install?
